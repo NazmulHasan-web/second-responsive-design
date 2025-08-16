@@ -5,3 +5,160 @@
   font-weight: 400;
   font-style: normal;
 }
+/* common styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.display-flex{
+    display: flex;
+}
+
+.common-color{
+    color: #252432;
+}
+
+main{
+    max-width: 1140px;
+    margin: 0 auto;
+}
+.section-gap{
+    margin-top: 100px;
+}
+.paragraph{
+    font-size: 1.2rem;
+    color: #252432;
+}
+
+/* header related styles */
+header{
+    background-image: url("../Assets/Hero-bg.png");
+}
+.navbar{
+    max-width: 1140px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar h2{
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: #4E47FF;
+}
+.navbar button{
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color:#4E47FF ;
+    padding: 12px 36px;
+    border-radius: 10px;
+}
+.bannar{
+    max-width: 905px;
+    margin: 0 auto;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 150px;
+    gap: 30px;
+}
+.bannar h2{
+    font-weight: bold;
+    font-size: 4rem;
+}
+.bannar button{
+    padding: 12px 36px;
+    color: white;
+    background-color: #4E47FF;
+    border-radius: 10px;
+}
+/* Action section related styles starts */
+.webflow img{
+    width: 403px;
+    height: 328px;
+}
+.container{
+    align-items: center;
+    justify-content: space-between;
+    gap: 220px;
+}
+
+.Action h3{
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+.Action button{
+    padding: 12px 36px;
+    color: white;
+    background-color: #4E47FF;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+/* productive user section starts */
+.productive-users{ 
+    text-align: center;
+}
+.productive-users h3{
+    font-weight: bold;
+    font-size: 2.3rem;
+}
+.users-feedback{
+    display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 160px;
+   margin-top: 40px;
+}
+.user-description h2{
+    font-size: 5rem;
+    font-weight: bold;
+    color: #4E47FF;
+}
+.user-description p{
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #000000;
+}
+
+/* mobile responsive design */
+@media screen and (max-width: 576px) {
+    .display-flex{  
+      flex-direction: column;  
+    }
+    .navbar{
+        gap: 30px;
+    }
+    .navbar button, .bannar button{
+        padding: 8px 24px;
+    }
+    .bannar h2{
+        font-size: 2rem;
+    }
+    .Action{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .Action button{
+        padding: 10px 30px;
+    }
+    .container{
+        gap: 50px;
+    }
+    .users-feedback{
+        gap: 20px;
+    }
+    .user-description h2{
+        font-size: 2.5rem;
+    }
+    .user-description p{
+        font-size: 1rem;
+    }
+   
+    
+}
